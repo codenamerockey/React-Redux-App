@@ -1,11 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { getPlayer } from '../actions';
+import PlayerCard from './PlayerCard';
 
 const PlayerList = ({ state, getPlayer }) => {
-  console.log(state);
+  // you should always have controlled way to call your functions that send your actions to the reducer
   return (
     <div>
+      {state.players.map(player => {
+        return <PlayerCard players={player} />;
+      })}
       <button onClick={() => getPlayer()}>Get Player Info</button>
     </div>
   );
