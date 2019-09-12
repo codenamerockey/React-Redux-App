@@ -1,11 +1,12 @@
 import React from 'react';
 
 import './App.css';
+import PlayerList from './components/PlayerList';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello from App.Js</h1>
+      <PlayerList />
     </div>
   );
 }
