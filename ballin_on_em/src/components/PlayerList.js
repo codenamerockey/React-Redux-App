@@ -7,10 +7,13 @@ const PlayerList = ({ state, getPlayer }) => {
   // you should always have controlled way to call your functions that send your actions to the reducer
   return (
     <div>
-      {state.players.map(player => {
-        return <PlayerCard players={player} />;
-      })}
-      <button onClick={() => getPlayer()}>Get Player Info</button>
+      <div className="flex">
+        {state.players.map(player => {
+          return <PlayerCard players={player} key={player.id} />;
+        })}
+      </div>
+
+      <button onClick={() => getPlayer()}>Get Nba Players</button>
     </div>
   );
 };
