@@ -13,8 +13,9 @@ const PlayerCard = ({ players }) => {
         </div>
         <div className="meta">{players.position}</div>
         <div className="description">
-          Elliot is a sound engineer living in Nashville who enjoys playing
-          guitar and hanging with his cat.
+          <h4>City: {players.team.city}</h4>
+          <h4>Conference: {players.team.conference}</h4>
+          <h4>Division: {players.team.division}</h4>
         </div>
       </div>
       <div className="extra content">
