@@ -38,3 +38,9 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+body {
+  background-image: url('https://images-na.ssl-images-amazon.com/images/I/71Ogy0v90WL._SL1500_.jpg');
+  background-repeat: repeat;
+  background-size: cover;
+}
