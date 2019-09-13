@@ -1,10 +1,11 @@
 import React from 'react';
+import logo from '../nba_logo.jpg';
 
 const PlayerCard = ({ players }) => {
   return (
     <div className="ui card  two column grid">
       <div className="image">
-        <img src="/images/avatar/large/elliot.jpg" />
+        <img src={logo} />
       </div>
       <div className="content">
         <div className="header">
@@ -17,7 +18,7 @@ const PlayerCard = ({ players }) => {
         </div>
       </div>
       <div className="extra content">
-        <a>
+        <a href="http://www.nba.com" target="_blank">
           <i aria-hidden="true" className="user icon"></i>
           {players.team.full_name}
         </a>
